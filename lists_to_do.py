@@ -16,15 +16,18 @@ shuffle([1,2,3,4,5])
 
 #SKYLINE HEIGHTS
 def visible_buildings(list):
-    visible_list = []
+    new_list = []
+    greatest_num = list[0]
     for i in range(0,len(list)):
-        if : #value is greater than zero AND greater than the number that comes before it in the list
-            visible_list.append(i)
-        else:
+        if list[i] < 0:
             continue
-    print(visible_list)
+        if list[i] > greatest_num:
+            new_list.append(list[i])
+            greatest_num = list[i]
+    print(new_list)
+    return new_list
 
-    visible_buildings([-1,1,1,7,3])
+visible_buildings([-1,1,5,3,4,7,6])
 
     #ZIP IT
     
